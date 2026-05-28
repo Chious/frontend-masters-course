@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import s from "./styles.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { distance } from "@/lib/math";
 import { Roboto_Flex } from "next/font/google";
 import Script from "next/script";
@@ -10,7 +10,6 @@ import Script from "next/script";
 const roboto = Roboto_Flex({ subsets: ["latin"] });
 
 export default function Page() {
-  const [distanceValue, setDistanceValue] = useState(0);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
