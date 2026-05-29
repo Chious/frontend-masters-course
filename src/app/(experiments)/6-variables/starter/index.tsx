@@ -5,7 +5,6 @@ import s from "./styles.module.css";
 import { useEffect, useRef } from "react";
 import { distance } from "@/lib/math";
 import { Roboto_Flex } from "next/font/google";
-import Script from "next/script";
 
 const roboto = Roboto_Flex({ subsets: ["latin"] });
 
@@ -54,10 +53,6 @@ export default function Page() {
         s.grid,
       )}
     >
-      <Script
-        crossOrigin="anonymous"
-        src="//unpkg.com/react-scan/dist/auto.global.js"
-      />
       <h1
         ref={titleRef}
         className={cn(
